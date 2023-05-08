@@ -144,8 +144,9 @@ Um entsprechende Publikationen und Statistiken zu erhalten, wurden verschiedene 
 Als Schlüsselwörter, die bei der Suche verwendet wurden, sind neben den folgenden Wörtern auch verschiedene Kombinationen miteineinander sowie den Umständen entsprechend auch deren englischen Übersetzungen zu Einsatz gekommen:
 
 \begin{itemize}
-	\item Wohnungslose, Obdachlose, Wohnungs- und Obdachlosigkeit
-	\item medizinische Dokumentation
+	\item Wohnungslose, Obdachlose, Wohnungs- und Obdachlosigkeit (engl. \textit{homelessness})
+	\item medizinische Dokumentation (engl. \textit{medical documentation})
+	\item elektronische Patientenakte (engl. \textit{electronic medical record})
 	\item Hilfsangebote, Wohnungslosenhilfe in Leipzig
 	\item Umgang mit vulnerablen Gruppen
 	\item Ansätze, Strategien, Interventionen
@@ -154,6 +155,29 @@ Als Schlüsselwörter, die bei der Suche verwendet wurden, sind neben den folgen
 Gefundene Dokumente wurden zudem als Anhaltspunkte genommen, um mithilfe des Schneeballverfahrens weitere mögliche Quellen ausfindig zu machen. Dies ist vor Allem hilfreich, da hierbei nicht nur verschiedene Studien zitiert werden, sondern auch auf Pressemitteilungen und Graue Literatur von verschiedenen relevanten Organisationen verwiesen wird.
 
 Zuletzt konnten auch die Webseiten von Hilfsorganisationen, die auf einen der bereits genannten Wege gefunden wurden, auf weiterführende Links untersucht werden. Viele nutzen diese Möglichkeit, um anzugehende Probleme oder zu erreichende Ziele besser zu beschreiben oder zu untermalen.
+
+Im Folgenden ist eine Auflistung relevanter Publikationen, auf die in den einzelnen Kapiteln zurückgegriffen wird:
+
+\todo{ergänzen, anpassen, ordnen}
+
+\begin{table}[ht]
+	\centering
+	\tymin=0.25\textwidth
+	\begin{tabulary}{\textwidth}{LL}
+		\toprule
+		Titel							&	Verweis\\
+		\midrule
+		The Medical Treatment of Homeless People &	\citet{Kaduszkiewicz.2017}\\
+		Psychische und somatische Gesundheit von wohnungslosen Menschen &	\citet{DAE228829}\\
+		Health interventions for people who are homeless &	\citet{Hwang.2014}\\
+		Statistikbericht 2020: Zu Lebenslagen wohnungsloser und von Wohnungslosigkeit bedrohter Menschen in Deutschland -- Lebenslagenbericht &	\citet{BAGW.2022}\\
+		Der anonyme Behandlungsschein -- von der Idee zur Umsetzung. Ein Handlungsleitfaden & \citet{Zanders.2022}\\
+		Homeless health care: meeting the challenges of providing primary care &	\citet{Davies.2018}\\
+		\bottomrule
+	\end{tabulary}
+	\caption[Relevante Publikationen]{Eine Auflistung gefundener Publikationen von Relevanz}
+	\label{tab:pub}
+\end{table}
 
 \subsection{Interview}
 
@@ -183,3 +207,15 @@ Neben einer allgemeinen Literaturrecherche und den Interviews gibt es noch einig
 Sollte es erforderlich sein, eine Mehrzahl von Personen gleichzeitig zu bestimmten Punkten zu befragen, könnte auch ein Fragebogen ausgearbeitet werden. Je nach Grad der Standardisierung sind die Antworten untereinander vergleichbar und bieten die Möglichkeit, subjektive Meinungen und Unterschiede zu erfassen. Im Vergleich zu einem Interview ist ein Fragebogen zudem etwas diskreter und anonymer, sodass die Befragten eher dazu bereit sind, heikle Fragen zu beantworten.
 
 Zuletzt kann bei bereits vorhandenen Dokumenten und Daten eine Dokumentenanalyse durchgeführt werden. Im Vergleich zu den anderen Methoden ist der Aufwand zwar geringer, jedoch kann nicht garantiert werden, dass relevante Informationen daraus gewonnen werden können, da die Dokumente, auf die zugegriffen wird, für andere Zwecke erstellt wurden. \citep{Doering.2015}
+
+
+\section{Modellierungsformen}
+
+Um Informationen verständlich und anschaulich darzustellen, müssen bestehende Rohdaten zunächst aufbereitet werden. Hierbei bedient man sich oft an verschiedenen Modellen, die dabei helfen sollen, einen untersuchten Ausschnitt aus der Realität detailliert abzubilden. Im Zusammenhang mit dieser Arbeit soll in den ausgewählten Modellen bzw. Diagrammen deutlich werden, welche Akteure wann und in welcher Form miteinander kommunizieren.
+
+Die Unified Modelling Language (UML) bietet eine Vielzahl an unterschiedlichen Struktur- und Verhaltensdiagrammen, sodass für die meisten Aufgabenstellungen auch ein passendes gefunden werden kann. Der erstere Diagrammtyp befasst sich dabei mit der statischen Struktur eines Systems, während sich der zweite auf das dynamische Verhalten der Objekte in einem System konzentriert und dadurch Veränderungen im Laufe der Zeit beschreibt. 
+
+Des Weiteren findet zur Darstellung von allgemeinen Prozessen die Spezifikationssprache BPMN Verwendung. Mit den darin bereitgestellten Symbolen können gesamte Geschäftsprozesse und Arbeitsabläufe modelliert werden. Im Gegensatz zur objektorientierten UML-Notation ist BPMN prozessorientiert.
+
+In \citet{Winter.2023} wird zur Modellierung von Informationssystemen das Drei-Ebenen-Meta-Modell (3LGM²) vorgestellt. Hierbei wird das zu untersuchende System anhand einer fachlichen Ebene sowie einer logischen und physischen Werkzeugebene dargestellt.
+\todo{ausbauen}
