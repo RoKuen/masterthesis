@@ -6,161 +6,43 @@ In Vorbereitung auf den praktischen Teil dieser Arbeit müssen noch einige Über
 
 \section{Vergleichskriterien}
 
-Im Folgenden wird eine Auswahl an Kriterien definiert, die eine Vergleichbarkeit zwischen bestehenden Ansätzen und dem Leipziger System ermöglichen soll. Es ist anzumerken, dass sich die Kriterien untereinander beeinflussen können, beispielsweise geht eine hohe Interoperabilität mit einem geringeren Zeitaufwand einher.
+Im Folgenden wird eine Auswahl an Kriterien definiert, die eine Vergleichbarkeit zwischen bestehenden Ansätzen und dem Leipziger System ermöglichen soll. Dabei muss zunächst unterschieden werden, für welche Anwendungsfälle die einzelne Kriterienmenge gedacht ist. Ein späterer Vergleich kann beispielsweise auf der Ebene einer konkreten Software oder des umliegenden Informationssystems geschehen, welches alle Bausteine dieses soziotechnischen Systems mit einschließt.
+
+Für die Bewertung von Software-Qualität können nach der ISO/IEC 25000 die folgenden sechs Kriterien aufgezählt werden:
 
 \begin{enumerate}
-	\item \textbf{Funktionalität}
-	\begin{itemize}
-		\item[] Das System sollte über die erforderlichen Funktionen verfügen, die den spezifischen Anforderungen der medizinischen Dokumentation genügen. Dazu gehört z.B. die Erfassung, Speicherung, Suche und Aktualisierung von Patientendaten.
-	\end{itemize}
-	\item \textbf{Benutzerfreundlichkeit}
-	\begin{itemize}
-		\item[] Idealerweise sollte ein Dokumentationssystem einfach zu erlernen und zu bedienen sein. Hierbei fließt auch das subjektive Empfinden der Anwender mit in die Bewertung ein.
-	\end{itemize}
-	\item \textbf{Interoperabilität}
-	\begin{itemize}
-		\item[] Hierbei soll untersucht werden, inwiefern Daten mit anderen Systemen (z.B. Laborinformationssystem) ausgetauscht werden können.
-	\end{itemize}
-	\item \textbf{Zeit- und Ressourcenaufwand}
-	\begin{itemize}
-		\item[] Es ist von Interesse, wie viel Zeit bei der Bedienung des jeweiligen Systems aufgewendet werden muss bzw. ob zusätzliche Ressourcen zur Bedienung aufgebracht werden müssen.
-	\end{itemize}
-	\item \textbf{Anpassbarkeit}
-	\begin{itemize}
-		\item[] Mit der Zeit aufkommende Anforderungen (z.B. gesetzlicher Natur) sollten möglichst genau und schnell umgesetzt werden.
-	\end{itemize}
-	\item \textbf{Datenschutz und -sicherheit}
-	\begin{itemize}
-		\item[] Da medizinische bzw. personenbezogene Daten meist sehr sensibel sind, sollten entsprechende Vorkehrungen zu deren Schutz implementiert sein.
-	\end{itemize}
-	\item \textbf{Digitalisierungsgrad}
-	\begin{itemize}
-		\item[] Zu welchem Anteil können die Systeme in digitaler Form betrieben werden? Dieser Aspekt ist dahingehend von Bedeutung, da die Verwendung digitaler Lösungen immense Vorteile in Bezug auf Verfügbarkeit der jeweiligen Inhalte bringen kann.
-	\end{itemize}
+	\item Funktionalität
+	\item Zuverlässigkeit
+	\item Effizienz
+	\item Wartbarkeit
+	\item Portabilität
+	\item Nutzbarkeit
 \end{enumerate}
+
+\todo{ausführlicher}
+
+Für den Vergleich von Informationssystemen kann auf \citet{Winter.2023} zurückgegriffen werden, wobei man hier die einzelnen Kriterien anhand von drei Ebenen unterteilt, welche auch den Grundbaustein für das 3LGM²-Metamodell darstellen:
+
+In der \textbf{fachlichen Ebene} geht es darum, dass die richtigen Informationen zur richtigen Zeit am richtigen Ort den richtigen Personen in der richtigen Form zur Verfügung stehen, damit diese die richtigen Entscheidungen treffen können. Weiterhin sind im Bezug auf Datenqualität die Integrität, Authentizität und Korrektheit der Daten von Bedeutung, welche in möglichst standardisierter Form erfasst werden sollten.
+
+Da in der \textbf{logischen Werkzeugebene} mit Anwendungssystemen als Komponenten gearbeitet wird, gibt es hier einen gewissen Grad an Überschneidung mit der oben aufgeführten Qualität von Softwareprodukten, da diese durch Customizing letztendlich als ein solches System angesehen werden. Aus diesem Grund werden auch hier Kriterien wie Funktionalität, Portabilität bzw. Anpassbarkeit, Zuverlässigkeit und Nutzerfreundlichkeit aufgeführt, wobei zusätzlich auch Zertifizierung und Interoperabilität mit genannt werden.
+
+Die Qualität auf der \textbf{physischen Werkzeugebene} wird vordergründig anhand von drei Aspekten untersucht. So ist nicht nur die Verfügbarkeit und die Sicherheit von datenverarbeitenden Systemen von Bedeutung, sondern auch deren multiple Verwendbarkeit.
 
 
 \section{Interviewleitfäden}
 
-Als Methode zur Informationsbeschaffung werden hauptsächlich Interviews geführt. Wie zuvor beschrieben sollen gesammelte Informationen nicht nur detailliert, sondern auch vergleichbar sein. Aus diesem Grund sind halbstrukturierte bzw. Leitfaden-Interviews hierbei von besonderem Interesse, wobei in Vorbereitung auf die eigentliche Durchführung zunächst die jeweiligen Interviewleitfäden erarbeitet werden müssen.
+Als Methode zur Informationsbeschaffung werden hauptsächlich Interviews geführt. Wie zuvor beschrieben sollen gesammelte Informationen nicht nur detailliert, sondern auch vergleichbar sein. Aus diesem Grund sind halbstrukturierte bzw. Leitfaden-Interviews hierbei von besonderem Interesse, wobei in Vorbereitung auf die eigentliche Durchführung zunächst die jeweiligen Interviewleitfäden erarbeitet werden müssen. (siehe Anhang A)
 
 Bei der Auswahl der zu befragenden Personen wäre zunächst das Umfeld von CABL interessant, was zum einen organisatorische Mitarbeiter:innen als auch die ehrenamtlich arbeitenden Ärzt:innen mit einschließt. Weiterhin sollte auch medizinisches Personal befragt werden, was in Krankenhausbereichen arbeitet, die von wohnungslosen Menschen regelmäßig aufgesucht werden (z.B. Psychotherapie). Zuletzt können auch die Sozialarbeiter:innen der verschiedenen Hilfsorganisationen einen Einblick in die Routinen und Verfahrensweisen bei gesundheitlichen Anliegen von Hilfesuchenden geben.
 
-Für die \textbf{ehrenamtlichen Ärzt:innen} werden die folgenden Fragen in Bezug auf die medizinische Versorgung von (wohnungslosen) Menschen gestellt, die keinen Zugang zum Regelsystem bzw. keine Krankenversicherung besitzen:
+Damit das Themengebiet besser eingeordnet werden kann, wird für die \textbf{ehrenamtlichen Ärzt:innen} zunächst angemerkt, dass sich die aufgeführten Fragen auf die medizinische Versorgung von (wohnungslosen) Menschen beziehen, die keinen Zugang zum Regelsystem bzw. keine Krankenversicherung besitzen. Der Leitfaden hierbei wird mit den Gedanken erstellt, um herauszufinden, wie die einzelnen Ärzt:innen bei einer Behandlung vorgehen, welche Tools sie dabei benutzen und ob sie eigene Notizen erstellen.
 
-\begin{itemize}
-	\item Unter welchen Umständen wird dokumentiert?
-	\begin{itemize}
-		\item Gibt es ggf. Unterschiede zwischen den einzelnen Situationen? (auf der Straße, in Notunterkünften, …)
-	\end{itemize}
-	\item Erfolgt eine Feststellung der Identität?
-	\begin{itemize}
-		\item Wenn ja, mit welchen Mitteln? (Ausweis, Eigenaussage, …)
-	\end{itemize}
-	\item ­	Was wird alles dokumentiert?
-	\begin{itemize}
-		\item Welche Daten werden erfasst?
-		\item Welche Dokumente werden erstellt?
-	\end{itemize}
-	\item Wer dokumentiert?
-	\item Mit welchen Personen/Institutionen werden die Daten geteilt?
-	\item In welcher Form erfolgt die Kommunikation? (Brief, E-Mail, Telefonat, …)
-	\item {}[falls relevant] Fragen zum Einsatz der Kobo Tool Box:
-	\begin{itemize}
-		\item Wie wird das Tool gehandhabt?
-		\item Welche Daten werden dabei erfasst?
-		\item In welcher Form und Struktur werden diese abgelegt?
-	\end{itemize}
-	\item {}[falls relevant]Fragen zum anonymen Behandlungsschein:
-	\begin{itemize}
-		\item Wie erfolgt die Ausstellung?
-		\begin{itemize}
-			\item Welche Voraussetzungen müssen erfüllt sein?
-			\item Gibt es auch eine digitale Variante?
-		\end{itemize}
-		\item Wie wird der ABS verwendet bzw. wie wird damit umgegangen?
-		\item Wie wird die Behandlung finanziert?
-	\end{itemize}
-\end{itemize}
+Die Fragen für die \textbf{Mitarbeiter von CABL} ähneln inhaltlich dem vorherigen Fragebogen, wobei die Fragen zur Dokumentation etwas generischer sind. Es vor allem herausgefunden werden, ob der Verein selber Dokumente zur medizinischen Versorgung anlegt oder erhält und wie gegebenenfalls damit umgegangen wird. Neben den Verfahrensweisen mit dem ABS wäre es auch wissenswert, wie der Kontakt zu anderen Institutionen im Gesundheitswesen oder dem Sozial- bzw. Gesundheitsamt aussieht.
 
-Die Fragen für die \textbf{Mitarbeiter von CABL} ähneln inhaltlich dem vorherigen Fragebogen, wobei insbesondere Antworten bzw. Erklärungen zur Verfahrensweise mit dem ABS erhofft werden:
+Bei der Befragung des \textbf{medizinischen Krankenhauspersonals} steht im Vordergrund, wie mit der oben genannten Personengruppe umgegangen wird und welche Dokumente zur Behandlung benötigt werden. Als Teil der Regulärversorgung muss dahingehend auch untersucht werden, über welche Schnittstellen mit den Hilfsorganisationen kommuniziert wird und wie der Kontakt mit den wohnungslosen Personen aufgebaut wird und erhalten bleibt.
 
-\begin{itemize}
-	\item Unter welchen Umständen wird dokumentiert? (Einzelsprechstunden, auf der Straße, in Notunterkünften, …)
-	\begin{itemize}
-		\item Gibt es Unterschiede (Umfang oder Inhalt der Dokumentation) zwischen den einzelnen Situationen?
-	\end{itemize}
-	\item Wird unter Umständen die Identität der Personen erfasst?
-	\item Was wird alles dokumentiert?
-	\begin{itemize}
-		\item Welche Daten werden erfasst?
-		\item Welche Dokumente werden erstellt?
-	\end{itemize}
-	\item Wer dokumentiert bzw. ist hierfür verantwortlich?
-	\item Mit welchen Personen/Institutionen werden die Daten geteilt?
-	\item In welcher Form erfolgt die Kommunikation? (Brief, E-Mail, Telefonat, …)
-	\begin{itemize}
-		\item auch mit dem Sozial- bzw. Gesundheitsamt?
-	\end{itemize}
-	\item Fragen zum anonymen Behandlungsschein:
-	\begin{itemize}
-		\item Wie erfolgt die Ausstellung?
-		\begin{itemize}
-			\item Welche Voraussetzungen müssen erfüllt sein?
-			\item Gibt es auch eine digitale Variante?
-		\end{itemize}
-		\item Wie wird der ABS verwendet bzw. wie wird damit umgegangen?
-		\item Wie wird die Behandlung finanziert?
-		\item Wie ist die Zusammensetzung der Gruppe, die den ABS benutzen? (Obdachlose, LGBTQ, ...)
-	\end{itemize}	
-\end{itemize}
-
-Bei der Befragung des \textbf{medizinischen Krankenhauspersonals} steht im Vordergrund, wie mit der oben genannten Personengruppe umgegangen wird und ob in dieser Hinsicht Kontakt zu den Hilfsorganisationen besteht:
-
-\begin{itemize}
-	\item Gibt es konkrete Vorgaben zum Umgang mit wohnungslosen Menschen?
-	\item Gibt es im Vergleich zum Standardvorgehen Unterschiede bei der Dokumentation, wenn
-	\begin{itemize}
-		\item der Patient oder die Patientin seine/ihre Identität nicht nachweisen will oder kann?
-		\item kein Krankenversicherungsnachweis vorliegt?
-		\item ein anonymer Behandlungsschein vorliegt?
-	\end{itemize}
-	\item Über welchen Weg werden Patient:innen an Sie verwiesen?
-	\begin{itemize}
-		\item Besteht Kontakt zu Hilfsorganisationen für Wohnungslose? (z.B. CABL, Safe, TiMMi ToHelp, …)
-		\begin{itemize}
-			\item Wenn ja, in welcher Form findet der Austausch statt? (Brief, E-Mail, Telefonat, …)
-		\end{itemize}
-	\end{itemize}
-	\item Wie werden Termine zur Weiterbehandlung organisiert?
-	\begin{itemize}
-		\item Wie werden die Betroffenen informiert bzw. kontaktiert?
-		\item Wie ist das Vorgehen beim Fernbleiben von Behandlungsterminen?
-	\end{itemize}
-\end{itemize}
-
-Die Fragen für die \textbf{Sozialarbeiter:innen} haben den gleichen Bezug wie die der Mediziner, jedoch steht hier mehr die Kommunikation mit den Einrichtungen des Gesundheitswesens im Vordergrund. Idealerweise sollte die Befragung dieser Personengruppe nach den Interviews mit dem medizinischen Personal geschehen. Da sich die einzelnen Hilfsangebote einer breiten Auswahl an Aufgaben und Ziele annehmen, sollte man sich hier explizit auf die medizinische Versorgung beschränken:
-
-\begin{itemize}
-	\item Werden medizinische Daten dokumentiert?
-	\begin{itemize}
-		\item Wenn ja, welche Dokumente und in welcher Form?
-		\item Unter welchen Umständen?
-	\end{itemize}
-	\item Wie ist das Vorgehen bei medizinischen Vorfällen, wenn kein Arzt oder keine Ärztin vor Ort ist?
-	\begin{itemize}
-		\item Wie oft ist med. Personal bei Einsätzen (z.B. bei dem Hilfebus) mit dabei?
-	\end{itemize}
-	\item An wen bzw. welche Institution werden Wohnungslose mit gesundheitlichen Beschwerden verwiesen?
-	\item Gibt es (Beratungs-) Angebote, um hilfsbedürftige Menschen wieder in die Regelversorgung zu überführen?
-	\begin{itemize}
-		\item Wenn ja, wie erfolgreich zeichnen sich diese aus?
-	\end{itemize}
-	\item Besteht außerhalb der konkreten Fälle regelmäßiger Kontakt zu med. Personal?
-	\begin{itemize}
-		\item Wenn ja, in welcher Form? (Brief, E-Mail, Telefonat, …)
-	\end{itemize}
-\end{itemize}
+Die Fragen für die \textbf{Sozialarbeiter:innen} haben den gleichen Bezug wie die der Mediziner, jedoch steht hier mehr die Kommunikation mit den Einrichtungen des Gesundheitswesens im Vordergrund. Idealerweise sollte die Befragung dieser Personengruppe nach den Interviews mit dem medizinischen Personal geschehen. Da sich die einzelnen Hilfsangebote einer breiten Auswahl an Aufgaben und Ziele annehmen, sollte man sich hier explizit auf die medizinische Versorgung beschränken.
 
 Die Interviews werden sofern von den Teilnehmern nicht anders gewünscht einzeln und in persönlicher Weise / vor Ort durchgeführt. Dies erleichtert zum einen die Wahl eines möglichen Zeitraumes, da nicht auf terminliche Verpflichtungen von mehreren Personen geachtet werden muss. Zum anderen ist anzunehmen, dass das persönliche Aufsuchen der Befragten mit einer geringeren Störung ihres Arbeitsalltages verbunden ist.
 
@@ -177,8 +59,8 @@ Das zu untersuchende System soll nicht nur auf seine Struktur, sondern auch auf 
 
 Ein Kommunikationsdiagramm ähnelt zunächst einem Sequenzendiagramm in der Hinsicht, dass es ebenfalls die Interaktionen zwischen Objekten oder Lebenslinien (engl. \textit{lifelines}) darstellt. Es legt den Fokus jedoch nicht auf das zeitliche Geschehen bzw. die Abfolge der einzelnen Interaktionen, sondern wird hierbei besser aufgezeigt, welche Elemente miteinander kommunizieren. Da in dieser Arbeit mehr Wert auf die einzelnen Akteure sowie deren Kommunikation untereinander gelegt wird, ist dieses Diagramm dem Sequenzendiagramm vorzuziehen.
 
-Zur Visualisierung von Prozessen kann als Modell und Notation BPMN herangezogen werden. Dies ist von Relevanz, sollte ein konkreter Ablauf innerhalb des Informationssystems näher untersucht werden, wobei beispielsweise der Umgang mit dem ABS interessant erscheint. Weiterhin kann damit aufgezeigt werden, wann in einem Prozess bestimmte Daten oder Dokumente erstellt bzw. diese benötigt werden.
+Zur Visualisierung von Prozessen kann als Modell und Notation BPMN herangezogen werden. Dies ist von Relevanz, sollte ein konkreter Ablauf innerhalb des Informationssystems näher untersucht werden, wobei beispielsweise der Umgang mit dem ABS interessant erscheint. Weiterhin könnte man damit aufzeigen, wann in einem Prozess bestimmte Daten oder Dokumente erstellt bzw. diese benötigt werden. Um die Anzahl der angestrebten Modellarten zu begrenzen, wird in dieser Arbeit jedoch auf BPMN verzichtet, zumal es sich in seiner Aussagekraft teilweise mit dem Kommunikationsdiagramm überschneidet.
 
-Zuletzt kann das System in seiner Gesamtheit mithilfe des 3LGM² Metamodells abgebildet werden. Anhand der fachlichen, logischen und physischen Ebene werden nicht nur die Beziehungen zwischen Aufgaben, Objekttypen und Organisationseinheiten dargestellt, sondern auch die darunterliegenden Anwendungsbausteine sowie letztendlich die physischen Datenverarbeitungsbausteine aufgezeigt.
+Zuletzt kann das System in seiner Gesamtheit mithilfe des 3LGM² Metamodells abgebildet werden. Anhand der fachlichen, logischen und physischen Ebene werden nicht nur die Beziehungen zwischen Aufgaben, Objekttypen und Organisationseinheiten dargestellt, sondern auch die darunterliegenden Anwendungsbausteine sowie letztendlich die physischen Datenverarbeitungsbausteine aufgezeigt. Da in dieser Arbeit das Informationssystem der medizinischen Dokumentation bei Wohnungslosen als Ganzes untersucht und aufgezeigt werden soll, biete dieses Metamodell die ideale Grundlage, um ein solches System zu visualisieren.
 
 \todo{evtl. Bilder einfügen}
