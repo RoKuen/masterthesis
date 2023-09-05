@@ -128,11 +128,25 @@ Das nachfolgende Modell zielt darauf ab, das Informationssystem in Bezug auf die
 
 \subsection{Fachliche Ebene}
 
-In der fachlichen Ebene sind die bereits genannten Elemente so gruppiert, dass zu erkennen ist, welche Personen für diese zuständig sind. Eine essentielle Personengruppe sind die ehrenamtlichen Ärzt:innen, welche die Angebote des Projektes \ac{UVO} als Aufgabe haben. Der damit einhergehende Objekttyp \enquote{Kobo-Daten} beschreibt sämtliche Daten, die mittels der KoboToolbox erfasst werden. Die medizinisch relevanten Details sind diesem Element untergeordnet.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{Images/domain1}
+	\caption[Fachliche Ebene - Teil 1]{Die fachliche Ebene mit den Gruppen um die ehrenamtlichen Ärzt:innen}
+	\label{fig:domain1}
+\end{figure}
+
+In der fachlichen Ebene (Abbildungen \ref{fig:domain1} und \ref{fig:domain2}) sind die bereits genannten Elemente so gruppiert, dass zu erkennen ist, welche Personen für diese zuständig sind. Eine essentielle Personengruppe sind die ehrenamtlichen Ärzt:innen, welche die Angebote des Projektes \ac{UVO} als Aufgabe haben. Der damit einhergehende Objekttyp \enquote{Kobo-Daten} beschreibt sämtliche Daten, die mittels der KoboToolbox erfasst werden. Die medizinisch relevanten Details sind diesem Element untergeordnet.
 
 Ein weiterer Objekttyp, der in diesem Zusammenhang relevant ist, sind Pläne bzw. generell Informationen die vom Projekt \ac{UVO} ausgehen. Diese werden neben der Koordination der Angebote auch für die UVO-Treffen verwendet, in denen sich die einzelnen Interessenparteien austauschen können.
 
 Die andere Aufgabe der Ärzt:innen ist die Anamnese während den CABL-Sprechstunden, wodurch die Fachrichtung des jeweiligen Falls geklärt wird. Die Kostenträgerermittlung wird ebenfalls für das Clearing benötigt. Der ausgehändigte \ac{ABS} kann anschließend bei der administrativen Aufnahme bei einer entsprechenden Gesundheitsinstitution verwendet werden.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{Images/domain2}
+	\caption[Fachliche Ebene - Teil 2]{Die fachliche Ebene mit dem Krankenhausumfeld und dem sozialpsychiatrischen Dienst}
+	\label{fig:domain2}
+\end{figure}
 
 Die verschiedenen medizinisch relevanten Dokumente, die einige Patient:innen bei sich tragen und mitbringen, sind oft von Bedeutung, um sich einen Überblick über das Befinden der Person zu verschaffen. Unter Umständen kann es auch sein, dass die Dokumente von Streetworker:innen getragen werden, um sie von einem Arzt / einer Ärztin zu der jeweiligen Person oder andersherum zu bringen.
 
@@ -140,9 +154,16 @@ Die letzte Gruppe enthält die Aufgabe und die Objekttypen, die gegenüber dem \
 
 \subsection{Logische Werkzeugebene}
 
-In dieser Werkzeugebene ist zunächst auffällig, dass die Anzahl an Schnittstellen sehr begrenzt ist und die Verbindungen meist mit papierbasierten Anwendungsbausteinen realisiert werden.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{Images/logical}
+	\caption[Logische Werkzeugebene]{Die logische Werkzeugebene}
+	\label{fig:logical}
+\end{figure}
 
-Beispielsweise werden die Notizen, welche von ehrenamtlichen Ärzt:innen während den Behandlungen erstellt werden, zwar meist nur als Gedächtnisstütze genutzt, jedoch können diese auch per Transkription in ein Praxisverwaltungssystem überführt werden, um dort einen entsprechenden Fall anzulegen. Die ist zumindest der Fall, wenn versucht wird, die behandelte Personen an eine Arztpraxis anzubinden.
+In dieser Werkzeugebene (Abbildung \ref{fig:logical}) ist zunächst auffällig, dass die Anzahl an Schnittstellen sehr begrenzt ist und die Verbindungen meist mit papierbasierten Anwendungsbausteinen realisiert werden.
+
+Beispielsweise werden die Notizen, welche von ehrenamtlichen Ärzt:innen während den Behandlungen erstellt werden, zwar meist nur als Gedächtnisstütze genutzt, jedoch können diese auch per Transkription in ein Praxisverwaltungssystem überführt werden, um dort einen entsprechenden Fall anzulegen. Die ist zumindest der Fall, wenn versucht wird, die behandelten Personen an eine Arztpraxis anzubinden.
 
 Im Falle von \ac{CABL} und \ac{UVO} sind die Bausteine in sich geschlossen und tauschen im Normalfall keine Daten miteinander aus. Über den \ac{ABS} als papierbasierter Baustein wird eine Verbindung mit dem Patientenverwaltungssystem, hier als Beispiel des \ac{UKL}, realisiert, wobei angemerkt werden muss, dass dieses weitere Schnittstellen zu anderen Anwendungssystemen besitzt, die für die Erfüllung von Aufgaben der Gesundheitsversorgung von Nöten sind. Dies wären beispielsweise ein Labor- oder ein Radiologieinformationssystem, die hierbei jedoch im Sinne der Anschaulichkeit weggelassen wurden.
 
@@ -150,7 +171,14 @@ Ein weiteres alleinstehendes Anwendungssystem wird zur Dokumentation der Arbeit 
 
 \subsection{Physische Werkzeugebene}
 
-Die unterste Ebene beschreibt die physischen Bausteine, auf denen die Anwendungssysteme laufen, und deren Verbindungen zueinander. Auch hier ist zu erkennen, dass die einzelnen Komponenten ziemlich losgelöst voneinander arbeiten und Kommunikation hauptsächlich zwischen Clients, die auf eine Anwendung zugreifen wollen, und Servern / Rechenzentren, die diese bereitstellen, stattfindet.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{Images/physical}
+	\caption[Physische Werkzeugebene]{Die physische Werkzeugebene}
+	\label{fig:physical}
+\end{figure}
+
+Die unterste Ebene (Abbildung \ref{fig:physical}) beschreibt die physischen Bausteine, auf denen die Anwendungssysteme laufen, und deren Verbindungen zueinander. Auch hier ist zu erkennen, dass die einzelnen Komponenten ziemlich losgelöst voneinander arbeiten und Kommunikation hauptsächlich zwischen Clients, die auf eine Anwendung zugreifen wollen, und Servern / Rechenzentren, die diese bereitstellen, stattfindet.
 
 Der humanitäre Server von KoboToolbox stellt beispielsweise die Plattform dar, auf die jene zugreifen können, die den entsprechenden Web-Link besitzen. In ähnlicher Weise wird die zur Ausstellung des \ac{ABS} benötigte Schein-Verwaltung auf den Servern des \ac{AKST} gehostet. In Bezug auf den \ac{VGP} oder einem Krankenhaus wie dem \ac{UKL}, werden die Anwendungen durch die eigene oder übergeordnete Institution bereitgestellt.
 
@@ -170,6 +198,18 @@ Der andere Ansatzpunkt ist es, die Leute durch Behandlungsscheine, entweder durc
 
 In Kapitel \ref{sec:approaches} wurden Lösungsansätze aufgeführt, von denen einige in Vergleich mit dem Leipziger Informationssystem zur medizinischen Dokumentation bei Wohnungs- und Obdachlosen gesetzt werden können.
 
-Die Gegenüberstellung mit der Wohlfahrt Safetynet scheint hierfür besonders geeignet, da deren Angebote ebenfalls in der Größenordnung einer Stadt Anwendung finden. Mit Dublin als Sitz, stellt Safetynet einen zentralen Knotenpunkt bei der medizinischen Versorgung von Menschen dar, die sich außerhalb der Gesellschaft befinden. Dem gegenüber besitzt Leipzig mehrere eigenständige Anlaufstellen, zu denen wohnungslose Personen mit gesundheitlichen Beschwerden gehen können.
+Die Gegenüberstellung mit der Wohlfahrt Safetynet scheint hierfür besonders geeignet, da deren Angebote ebenfalls in der Größenordnung einer Stadt Anwendung finden. Mit Dublin als Sitz, stellt Safetynet einen zentralen Knotenpunkt bei der medizinischen Versorgung von Menschen dar, die sich außerhalb der Gesellschaft befinden. Dem gegenüber besitzt Leipzig mehrere eigenständige Anlaufstellen, zu denen wohnungslose Personen mit gesundheitlichen Beschwerden gehen können, welche sich jedoch den jeweiligen Situationen entsprechend in ihren Anwendungssystemen und Verfahrensweisen unterscheiden können.
 
-\todo{todo}
+Eine zentrale Verwaltung hat auf einer übergeordneten fachlichen Ebene den Vorteil, dass ausgetauschte Daten einen gewissen Grad an Standardisierung haben. Im Falle von Safetynet wird ein webbasiertes Gesundheitsaktensystem eingesetzt, welches von sämtlichen Teams zur Dokumentation verwendet wird. Solange es keine Einschränkungen beim Betrieb des Tools gibt, kann sichergestellt werden, dass anfallende oder benötigte Daten an den relevanten Orten zur richtigen Zeit zur Verfügung stehen, ggf. auch über eine Schnittstelle mit den Anwendungssystemen eines Krankenhauses oder einer Arztpraxis.
+
+Wie in den obigen Modellen aufgezeigt, sind im Leipziger Informationssystem eine Vielzahl alleinstehender Anwendungen zu finden, die darauf abzielen, den Bedürfnissen der Akteure möglichst gerecht zu werden. Zum Austausch mit den Anwendungssystemen anderer Gesundheitsinstitutionen wird häufig auf papierbasierte Bausteine wie handschriftliche Notizen, Behandlungsscheine oder Anamnesebögen zurückgegriffen, welche zwar eine gewisse Flexibilität aufweisen, aber dennoch für Leistungserbringer zu einem Mehraufwand führen, weil diese zunächst transkribiert werden müssen, damit sie in einem rechnerbasierten Anwendungssystem vor Ort verwendet werden können.
+
+In Bezug auf die Qualität der Daten wäre sicherlich ein rechnerbasiertes Anwendungssystem mit entsprechenden Schnittstellen gut geeignet, um sowohl die Integrität und Authentizität als auch die generelle Korrektheit der Daten zu prüfen. Zwar gibt es auch bei papierbasierten Methoden Möglichkeiten, dies sicherzustellen, jedoch gehen sie auch mit einer erhöhten Belastung für die Leistungserbringer einher.
+
+Mit Fokus auf die unterliegende logische Werkzeugebene zeigen sich beim Leipziger Informationssystem einige Vorteile gegenüber einem zentralisierten Ansatz, wie es bei Safetynet der Fall ist: Die Tatsache, dass kein Anwendungssystem allein für die Aufrechterhaltung des Informationsflusses zuständig ist, bedeutet auch, dass bei einem eventuellen Ausfall nur wenige Bereiche davon betroffen sind. Für solche Fälle sollte jedoch ohnehin ein entsprechendes Konzept vorliegen, um mit den einhergehenden Einschränkungen umzugehen.
+
+Aus diesem Grund kann man auch hier davon ausgehen, dass die positiven Merkmale von Ansätzen, wie sie z.B. in Dublin eingesetzt werden - vor allem in Sachen Funktionalität und Nutzerfreundlichkeit - den erhöhten Risiken überwiegen, die mit einem zentralen Knotenpunkt für Kommunikation einhergehen, zumal es Vorkehrungen gibt, um diese zu minimieren.
+
+Unter Betrachtung der physischen Ebene treten die Kriterien der Verfügbarkeit und Sicherheit mit in den Vordergrund. Diese sind im Leipziger Umfeld für die einzelnen Anwendungssysteme zu betrachten, sodass es einige positive Beispiele gibt, wie z.B. KoboToolbox, welche webbasiert abgerufen und somit auch über die privaten Mobilgeräte von Ärzt:innen vor Ort bedient werden kann. Die Daten werden dabei in einem für humanitäre Projekte dedizierten Rechenzentrum unter bestimmten Sicherheitsvorkehrungen gespeichert.
+
+Jedoch ist dies nicht bei allen Tools der Fall. So wird häufig bei mobilen Einsätzen des \acp{SpDi} oder bei Angeboten, die durch ehrenamtliche Ärzt:innen betreut werden, auf handschriftliche Notizen zurückgegriffen, um diese zu einem späteren Zeitpunkt in das zuständige Anwendungssystem, z.B. Octoware oder ein Praxisverwaltungssystem, zu übertragen. Die Verwendung papierbasierter Elemente führt insbesondere im wohnungslosen Umfeld zu Bedenken hinsichtlich Datensicherheit und -schutz, vor allem, wenn obdachlose Personen für ihre medizinischen Dokumente zuständig sind, die in solch prekären Situationen schnell verloren gehen können.
