@@ -4,9 +4,18 @@
 
 Nach der Erarbeitung des Lösungsansatzes soll es nun um die Einzelheiten gehen, die sich bei der Durchführung ergeben haben. Dazu steht primär die Abwicklung der Interviews sowie die Aufarbeitung der daraus entstehenden Rohdaten im Vordergrund. Es soll erklärt werden, welche Erkenntnisse aus den einzelnen Gesprächen gewonnen wurden.
 
-\section{Durchführung der Interviews}
+\section{Durchführung der Interviews}\label{sec:interviews}
 
-In der ursprünglichen Planung wurden insgesamt fünf Kontaktpersonen ausfindig gemacht, welche die bereits genannten Bereiche abdecken. Mit Fortschreiten der Gespräche wurden weitere Bereiche angesprochen, die in diesen Überlegungen von Relevanz sein könnten. Dies wären zum einen eine weitere Fachabteilung in einem Krankenhaus, die im höheren Maße mit Wohnungslosen bzw. Menschen, die den \ac{ABS} benutzen, in Kontakt kommt und zum anderen auch andere Streetworkprojekte (z.B. der Diakonie) sowie der sozialpsychiatrische Dienst, welcher dem Verbund Gemeindenahe Psychiatrie unterstellt ist und ebenfalls über ein mobiles Kontakt- und Beratungsteam verfügt. 
+In der ursprünglichen Planung wurden insgesamt fünf Kontaktpersonen ausfindig gemacht, welche die bereits genannten Bereiche abdecken. Dazu gehören:
+
+\begin{itemize}
+	\item ehrenamtliche Ärzt:innen
+	\item Mitarbeiter:in von \ac{CABL} bzw. dem Projekt \ac{UVO}
+	\item Fachärzt:in aus dem Krankenhausumfeld
+	\item Sozialarbeiter:in des Streetworkprojektes \ac{Safe}
+\end{itemize}
+
+Mit Fortschreiten der Gespräche wurden weitere Bereiche angesprochen, die in diesen Überlegungen von Relevanz sein könnten. Dies wären zum einen eine weitere Fachabteilung in einem Krankenhaus, die im höheren Maße mit Wohnungslosen bzw. Menschen, die den \ac{ABS} benutzen, in Kontakt kommt und zum anderen auch andere Streetworkprojekte (z.B. der Diakonie) sowie der sozialpsychiatrische Dienst, welcher dem Verbund Gemeindenahe Psychiatrie unterstellt ist und ebenfalls über ein mobiles Kontakt- und Beratungsteam verfügt. 
 
 Schlussendlich wurden insgesamt sechs Interviews durchgeführt, die in den folgenden Unterkapiteln zusammengefasst werden. Sämtliche Gespräche wurden auf persönlicher Weise durchgeführt und audiotechnisch aufgezeichnet sowie anschließend transkribiert, sodass darauf basierende Modelle erstellt werden konnten.
 
@@ -89,20 +98,20 @@ Der Kontakt zu medizinischem Personal besteht außerhalb der einzelnen Gruppen n
 Ein weiteres Problem, was in diesem Zusammenhang auch auftreten kann, sind bestimmte Grenzfälle, bei denen die Personen nicht als Notfall eingestuft werden aber dennoch soweit verletzt oder krank sind, dass sie nicht ohne Weiteres in Notschlafstellen aufgenommen werden können. Diese werden aufgrund der geringen Dringlichkeit aus den Notaufnahmen entlassen, bräuchten aber dennoch einen Ort, wo sie über längere Zeit liegen und medizinisch bzw. pflegerisch versorgt werden können, wofür die Notschlafstellen jedoch nicht ausgerüstet sind. 
 
 
-\section{Aufbereitung der Audio-Aufnahmen}
+\section{Aufbereitung der Audio-Aufnahmen}\label{sec:audio}
 
-Durch die Interviews sind jeweils zwei Arten an Rohdaten entstanden: Zum einen gehören sämtliche Notizen dazu, die während des Interviews per Hand verfasst wurden. Zum anderen wurden mit Erlaubnis der Beteiligten Audioaufnahmen der Gespräche mithilfe eines Smartphones erstellt. Die handschriftlichen Notizen dienen dabei zunächst nur als Gedankenstütze und werden nach der Bearbeitungszeit durch die Transkripte der m4a-Dateien als Grundlage abgelöst.
+Durch die Interviews sind jeweils zwei Arten an Rohdaten entstanden: Zum einen gehören sämtliche Notizen dazu, die während des Interviews per Hand verfasst wurden. Zum anderen wurden mit Erlaubnis der Beteiligten Audioaufnahmen der Gespräche mithilfe eines Smartphones erstellt. Die handschriftlichen Notizen dienen dabei zunächst nur als Gedankenstütze und werden nach der Bearbeitungszeit durch die Transkripte der m4a-Dateien als Grundlage abgelöst. Die meisten Aufnahmen hatten eine Länge von rund 30 Minuten, wobei es eine Ausnahme gab, welche knapp 55 Minuten erreichte.
 
-Um das aufgenommene Gespräch in Textform zu bringen, gibt es mehrere Herangehensweisen, die sich in Aufwand und Ergebnisqualität unterscheiden. So stehen für diese Aufgabe Methoden der manuellen und automatischen Transkription sowie die Hilfe durch Schreibkräfte zur Auswahl, wobei letztere Möglichkeit allein schon aus Kostengründen wegfällt.
+Als Möglichkeit zur Unterstützung der Transkription wurde nach einer kostengünstigen automatischen Variante gesucht. Dabei wurde das allgemeine Sprachmodell \textbf{Whisper} von OpenAI entdeckt, welches unter der MIT-Lizenz frei zugänglich ist und mit Python unter Verwendung der Bibliothek PyTorch trainiert und getestet wurde. Es besitzt daneben noch weiter Abhängigkeiten von bestimmten Python-Pakete, wie z.B. tiktoken, mit dem Text in Tokens aufgeteilt werden kann, die anschließend von verschiedenen Modellen verwendet werden können.
 
-Eine manuelle Transkription kann im einfachsten Fall ohne zusätzliche Tools erfolgen, indem die Audioaufnahme abgespielt wird, um per Hand das Gesagte aufzuschreiben. Da das Sprechen und Schreiben eines bestimmten Inhalts mit unterschiedlicher Geschwindigkeit geschieht, muss die Wiedergabe oft pausiert bzw. zurückgespult werden. Allein das mehrmalige Abspielen einzelner Passagen führt dazu, dass für diese Methode ein signifikanter Zeitbedarf anfällt, der durch Korrekturlesen und dem Setzen der Zeitmarken weiter erhöht wird.
+Für Whisper stehen insgesamt fünf Modellgrößen zur Auswahl, die sich in ihrer Parameteranzahl und Geschwindigkeit unterscheiden. Die kleinste Option ist \enquote{tiny} mit 39 Millionen Parametern, welche in der Spracherkennung etwa 32-mal schneller ist als das größte Modell \enquote{large} mit 1550 Millionen Parametern. Die Wahl fiel letztendlich auf die Größe \enquote{medium}, da es einen guten Kompromiss zwischen Ressourcen- bzw. Zeitaufwand und Ergebnisqualität darstellt.
 
-Um den Aufwand zu verringern, werden von verschiedenen Herstellern Tools angeboten, mit denen das manuelle Transkribieren vereinfacht werden soll. So können die Audiodateien in anpassbarer Geschwindigkeit wiedergegeben und Zeitmarken per Knopfdruck eingesetzt werden. Diese Anwendungen sind zumeist kostenfrei und können sowohl webbasiert über einen Browser als auch als eigenständiges Programm bedient werden.
+Zur Verwendung von Whisper wurde in der Python-Distribution \enquote{Anaconda} eine neue Umgebung mit Python 3.9.5 erstellt, in der das Spracherkennungsmodell sowie die Pakete \enquote{ffmpeg} und \enquote{setuptools\_rust} installiert wurden. Als Argumente wurde neben der zu verwendenden Modellgröße auch die Sprachoption für Deutsch übergeben, sodass sich der Befehl zum Ausführen der Spracherkennung folgendermaßen zusammensetzt:
 
-Bei einer automatischen Transkription wird versucht, Gesprochenes via Spracherkennung bzw. Speech-to-Text in eine lesbare Form zu bringen. Die dabei verwendeten Sprachmodelle schaffen diese Umwandlung in relativ kurzer Zeit, sind aber anfällig für Dialekte oder unbekannte/unverständliche Worte, zumal nicht jedes Modell für die deutsche Sprache eingesetzt werden kann. Viele der Anbieter bieten diese Option als kostenpflichtige Alternative zur manuellen Transkription an, da der Rechenaufwand auf ihrer Seite hierbei um einiges höher ist.
+\begin{verbatim}
+	whisper "Interview.m4a" --language German --model medium
+\end{verbatim}
 
-Eine andere Möglichkeit wurde mit dem allgemeinen Sprachmodell \textbf{Whisper} von OpenAI entdeckt, welche unter der MIT-Lizenz frei zugänglich ist und mit Python unter Verwendung der Bibliothek PyTorch trainiert und getestet wurde. Es besitzt daneben noch weiter Abhängigkeiten von bestimmten Python-Pakete, wie z.B. tiktoken, mit dem Text in Tokens aufgeteilt werden kann, die anschließend von verschiedenen Modellen verwendet werden können.
+Die benötigte Dauer richtete sich neben der Länge der jeweiligen Datei auch an der Qualität der Aufnahme bzw. der Verständlichkeit des Gesprochenen, wobei dennoch mehrere Stunden einzuplanen waren. Die einzelnen Aufnahmen konnten auf diesem Weg \enquote{im Hintergrund} in Textform gebracht werden und wurden in verschiedenen Dateiformaten gespeichert, beispielsweise für Untertitel (.vtt, .srt), welche bereits Zeitstempel enthielten.
 
-Bei der Verwendung von Whisper stehen insgesamt fünf Modellgrößen zur Auswahl, die sich in ihrer Parameteranzahl und Geschwindigkeit unterscheiden. Die kleinste Option ist \enquote{tiny} mit 39 Millionen Parametern, welche in der Spracherkennung etwa 32-mal schneller ist als das größte Modell \enquote{large} mit 1550 Millionen Parametern. Die Wahl fiel letztendlich auf die Größe \enquote{medium}, da es einen guten Kompromiss zwischen Ressourcen- bzw. Zeitaufwand und Ergebnisqualität darstellt.
-
-Die einzelnen Aufnahmen konnten auf diesem Weg \enquote{im Hintergrund} in Textform gebracht werden und wurden in verschiedenen Dateiformaten, beispielsweise für Untertitel (.vtt, .srt), gespeichert. Nach manueller Korrektur und Formatierung, stehen die Transkripte nun zur Verfügung.
+Zur manuellen Korrektur und Formatierung wurde der Inhalt der erstellten .vtt-Dateien kopiert und mittels Word im .docx-Format abgespeichert. Die Interview-Aufnahme wurde bei der Korrektur mit variabler Wiedergabegeschwindigkeit abgespielt, sodass schlussendlich ein Transkript mit guter Lesbarkeit erstellt werden konnte.
