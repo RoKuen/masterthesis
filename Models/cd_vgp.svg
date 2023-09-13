@@ -194,24 +194,28 @@
     /></g
     ><g transform="translate(130,430)"
     ><rect fill="none" x="0.5" width="118.5" height="58.5" y="0.5" clip-path="url(#clipPath10)"
-      /><text x="49" font-size="14px" y="34.9844" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >:TK</text
+      /><text x="23" font-size="14px" y="34.9844" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >:Tagesklinik</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(380,260)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="118.5" height="58.5" y="0.5" clip-path="url(#clipPath10)" stroke="none"
     /></g
     ><g transform="translate(380,260)"
     ><rect fill="none" x="0.5" width="118.5" height="58.5" y="0.5" clip-path="url(#clipPath10)"
-      /><text x="42" font-size="14px" y="34.9844" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >:SpDi</text
+      /><text x="9" font-size="14px" y="27" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >:Sozialpsychiatr.</text
+      ><text x="40" font-size="14px" y="42.9688" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >Dienst</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(130,90)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="118.5" height="58.5" y="0.5" clip-path="url(#clipPath10)" stroke="none"
     /></g
     ><g transform="translate(130,90)"
     ><rect fill="none" x="0.5" width="118.5" height="58.5" y="0.5" clip-path="url(#clipPath10)"
-      /><text x="46" font-size="14px" y="34.9844" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >:PIA</text
+      /><text x="12" font-size="14px" y="27" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >:Psychiatrische</text
+      ><text x="5" font-size="14px" y="42.9688" clip-path="url(#clipPath10)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >Institutsambulanz</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(130,260)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="118.5" height="58.5" y="0.5" clip-path="url(#clipPath10)" stroke="none"

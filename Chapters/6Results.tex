@@ -131,7 +131,7 @@ Das nachfolgende Modell zielt darauf ab, das Informationssystem in Bezug auf die
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Images/domain1}
-	\caption[Fachliche Ebene - Teil 1]{Die fachliche Ebene mit den Gruppen um die ehrenamtlichen Ärzt:innen}
+	\caption[Fachliche Ebene - Teil 1]{Die fachliche Ebene der ehrenamtlichen Versorgung von Wohnungslosen}
 	\label{fig:domain1}
 \end{figure}
 
@@ -187,20 +187,26 @@ Der humanitäre Server von KoboToolbox stellt beispielsweise die Plattform dar, 
 
 Diese Herangehensweise an medizinische Angebote bildet in Bezug auf die dazugehörige Dokumentation ein heterogenes Bild, bestehend aus einer Vielzahl an Tools, die den jeweiligen Situationen entsprechend gewählt wurden und eingesetzt werden. Am Beispiel des \acp{SpDi} ist sogar eine Software im Einsatz, welche extra für die Dokumentation in diesem Aufgabenfeld vorgesehen ist.
 
-Die Kommunikation zwischen den Leistungserbringern findet meist persönlich per Telefonat, E-Mail oder in Chatgruppen verschiedener Apps statt, wodurch ein Austausch sowohl zu medizinischen sowie zu sozialarbeitsbezogenen Themen auch kurzfristig stattfinden kann.
+Die Kommunikation zwischen den Leistungserbringern findet meist persönlich per Telefonat, E-Mail oder in Chatgruppen verschiedener Apps statt, wodurch ein Austausch sowohl zu medizinischen sowie zu sozialarbeitsbezogenen Themen auch kurzfristig stattfinden kann. Die Tools, welche im Zusammenhang mit der akuten Behandlung von Wohnungslosen eingesetzt werden, wie es z.B. bei den aufsuchenden Angeboten oft der Fall ist, wurden zudem so gewählt, dass dokumentarische Zeitaufwand für die behandelnden und beratenden Personen minimal ist.
 
 Die Tatsache, dass einige Angebote (z.B. im Projekt \ac{UVO}) auf die Mithilfe von ehrenamtlich arbeitenden Ärzt:innen angewiesen sind, stellt gleichzeitig auch ein Nachteil in Bezug auf die medizinische Dokumentation dar. Da man die Ehrenamtler:innen nicht mehr belasten möchte als nötig, werden keine verpflichtenden Vorgaben zum Umfang und Inhalt gestellt. Somit ist es auch möglich, dass in einigen Fällen gar keine Informationen zu den Patient:innen oder den durchgeführten Leistungen vorliegen. Für spätere Behandlungen kann man sich anschließend nur auf Eigenaussagen der Betroffenen oder halt auf eigene Notizen stützen.
+
+In Bezug auf die im Kapitel \ref{sec:criteria} definierten Kriterien, können auch weitere negative Eigenschaften des Leipziger Informationssystems erkannt werden. Im Modell \ref{fig:logical} ist zu erkennen, dass zwischen den einzelnen Anwendungssystemen so gut wie keine rechnerbasierten Schnittstellen existieren, über die Informationen ausgetauscht werden können, weshalb die Interoperabilität hierbei als niedrig eingestuft werden kann.
+
+Zudem ist die Verfügbarkeit einzelner Anwendungen nicht immer gewährleistet, wie am Beispiel von Octoware, dem Dokumentationstool des \ac{SpDi}, welches nur an den festen Standorten verwendet werden kann. Auf Papier geschriebene Notizen werden in solchen Fällen genutzt, um diese zu einem späteren Zeitpunkt in das jeweilige Anwendungssystem zu überführen oder um den generellen Informationsfluss zwischen zwei solcher Systeme zu ermöglichen. In Bezug auf Kriterium K4, können hierbei relativ häufig Medienbrüche festgestellt werden.
 
 Der andere Ansatzpunkt ist es, die Leute durch Behandlungsscheine, entweder durch das Sozialamt ausgestellt oder der \ac{ABS}, der von den Clearingstellen koordiniert wird, an die Regelversorgung anzubinden, was zu Folge hat, dass in den entsprechenden Institutionen eine Dokumentation, ggf. mit Pseudonym, von der Person hinterlegt wird. Aber auch hier gibt es den Nachteil, wenn eine pseudonymisierte Patientenakte bzw. die gespeicherten Daten eventuell nicht mehr einer vorstellig gewordenen Person zugeordnet werden können zumal die Scheine nur kurzfristig den Zugang zum Gesundheitssystem ermöglichen.
 
 
 \section{Vergleich mit bestehenden Ansätzen}\label{sec:compare}
 
-In Kapitel \ref{sec:approaches} wurden Lösungsansätze aufgeführt, von denen einige in Vergleich mit dem Leipziger Informationssystem zur medizinischen Dokumentation bei Wohnungs- und Obdachlosen gesetzt werden können.
+In Kapitel \ref{sec:approaches} wurden Lösungsansätze aufgeführt, von denen einige in Vergleich mit dem Leipziger Informationssystem zur medizinischen Dokumentation bei Wohnungs- und Obdachlosen gesetzt werden können. Die Gegenüberstellung mit der Wohlfahrt Safetynet und dem Hilfsprogramm BHCHP scheint hierfür besonders geeignet, da die Angebote beider Ansätze ebenfalls in der Größenordnung einer Stadt Anwendung finden. 
 
-Die Gegenüberstellung mit der Wohlfahrt Safetynet scheint hierfür besonders geeignet, da deren Angebote ebenfalls in der Größenordnung einer Stadt Anwendung finden. Mit Dublin als Sitz, stellt Safetynet einen zentralen Knotenpunkt bei der medizinischen Versorgung von Menschen dar, die sich außerhalb der Gesellschaft befinden. Dem gegenüber besitzt Leipzig mehrere eigenständige Anlaufstellen, zu denen wohnungslose Personen mit gesundheitlichen Beschwerden gehen können, welche sich jedoch den jeweiligen Situationen entsprechend in ihren Anwendungssystemen und Verfahrensweisen unterscheiden können.
+Mit Dublin als Sitz, stellt Safetynet einen zentralen Knotenpunkt bei der medizinischen Versorgung von Menschen dar, die sich außerhalb der Gesellschaft befinden. Das BHCHP nimmt für die Stadt Boston eine ähnliche Rolle ein, wobei dessen Ansatz auch die Verbesserung der Kooperation mit anderen Hilfsorganisationen vorsieht. Dem gegenüber besitzt Leipzig mehrere eigenständige Anlaufstellen, zu denen wohnungslose Personen mit gesundheitlichen Beschwerden gehen können, welche sich jedoch den jeweiligen Situationen entsprechend in ihren Anwendungssystemen und Verfahrensweisen unterscheiden können.
 
 Eine zentrale Verwaltung hat auf einer übergeordneten fachlichen Ebene den Vorteil, dass ausgetauschte Daten einen gewissen Grad an Standardisierung haben. Im Falle von Safetynet wird ein webbasiertes Gesundheitsaktensystem eingesetzt, welches von sämtlichen Teams zur Dokumentation verwendet wird. Solange es keine Einschränkungen beim Betrieb des Tools gibt, kann sichergestellt werden, dass anfallende oder benötigte Daten an den relevanten Orten zur richtigen Zeit zur Verfügung stehen, ggf. auch über eine Schnittstelle mit den Anwendungssystemen eines Krankenhauses oder einer Arztpraxis.
+
+BHCHP hat bei seinem Ansatz den Vorteil einer guten Interoperabilität. Da auf einen flächendeckenden Einsatz eines Patientenverwaltungssystems gesetzt wird, können die einzelnen Standorte bei entsprechender Anbindung frei und standardisiert miteinander kommunizieren. Dies führt ebenfalls zu einer Minimierung von Medienbrüchen, wodurch wiederum das Risiko für Übermittlungsfehler verringert wird.
 
 Wie in den obigen Modellen aufgezeigt, sind im Leipziger Informationssystem eine Vielzahl alleinstehender Anwendungen zu finden, die darauf abzielen, den Bedürfnissen der Akteure möglichst gerecht zu werden. Zum Austausch mit den Anwendungssystemen anderer Gesundheitsinstitutionen wird häufig auf papierbasierte Bausteine wie handschriftliche Notizen, Behandlungsscheine oder Anamnesebögen zurückgegriffen, welche zwar eine gewisse Flexibilität aufweisen, aber dennoch für Leistungserbringer zu einem Mehraufwand führen, weil diese zunächst transkribiert werden müssen, damit sie in einem rechnerbasierten Anwendungssystem vor Ort verwendet werden können.
 
